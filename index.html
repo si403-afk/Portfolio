@@ -1,154 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sahil Iyer | Portfolio</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            background-color: #f5f5f5;
+            background-color: #f4f6f8;
             color: #222;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
-            background-color: #1f2937;
+            background-color: #172033;
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 75px 20px;
         }
 
         header h1 {
-            margin-bottom: 10px;
+            font-size: 44px;
+            margin: 0 0 10px 0;
+        }
+
+        header h2 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0 0 22px 0;
+            color: #d6dce5;
+        }
+
+        header p {
+            max-width: 760px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
         }
 
         nav {
             background-color: white;
             text-align: center;
-            padding: 15px;
+            padding: 17px;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #ddd;
+            z-index: 100;
         }
 
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            color: #333;
+            color: #172033;
             font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #4b6485;
         }
 
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
+            max-width: 950px;
+            margin: 45px auto;
+            padding: 40px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #172033;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .section-intro {
+            color: #555;
+            margin-bottom: 25px;
         }
 
         .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
         }
 
         .skill {
-            background-color: #e5e7eb;
-            padding: 8px 14px;
+            background-color: #edf1f5;
+            padding: 9px 15px;
             border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid #dde3ea;
         }
 
         .project {
-            margin-bottom: 25px;
+            padding: 22px 0;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project h3 {
+            color: #172033;
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 21px;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+        }
+
+        .project-label {
+            display: inline-block;
+            font-size: 13px;
+            background-color: #edf1f5;
+            color: #4a5568;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
         }
 
         footer {
             text-align: center;
-            padding: 25px;
-            color: #666;
+            padding: 35px 20px;
+            color: #777;
+            font-size: 14px;
         }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            section {
+                margin: 25px 15px;
+                padding: 25px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+        }
+
     </style>
+
 </head>
 
 <body>
 
 <header>
+
     <h1>Sahil Iyer</h1>
+
+    <h2>Finance Student | Rutgers Business School</h2>
 
     <p>
         Finance student at Rutgers Business School with experience in wealth management,
-        equity research, financial modeling, and financial analysis.
+        equity research, portfolio analysis, and financial modeling, with a strong interest
+        in investing, financial markets, and helping individuals make informed financial decisions.
     </p>
+
 </header>
 
+
 <nav>
+
     <a href="#about">About</a>
+
     <a href="#skills">Skills</a>
+
     <a href="#projects">Projects</a>
+
 </nav>
 
+
 <section id="about">
+
     <h2>About Me</h2>
 
     <p>
-        I am a finance student at Rutgers Business School interested in investing,
-        financial markets, wealth management, and financial analysis.
+        I am a finance student at Rutgers Business School with a strong interest in
+        wealth management, investing, financial markets, and financial analysis.
+        I enjoy studying companies, understanding how financial markets react to
+        changing economic conditions, and learning how investment decisions can
+        help individuals and businesses reach long-term financial goals.
     </p>
+
+    <p>
+        Through academic projects and professional experience, I have worked with
+        financial research, Excel-based modeling, portfolio analysis, risk assessment,
+        and client-focused financial planning. I am especially interested in opportunities
+        that allow me to combine analytical thinking with communication and real-world
+        financial decision-making.
+    </p>
+
 </section>
+
 
 <section id="skills">
+
     <h2>Skills</h2>
 
+    <p class="section-intro">
+        A combination of financial, analytical, technical, and professional skills
+        developed through coursework, projects, and professional experience.
+    </p>
+
     <div class="skills">
+
         <span class="skill">Microsoft Excel</span>
+
         <span class="skill">Financial Modeling</span>
+
         <span class="skill">Equity Research</span>
+
         <span class="skill">Portfolio Analysis</span>
+
         <span class="skill">Risk Analysis</span>
+
         <span class="skill">Financial Planning</span>
+
         <span class="skill">Market Research</span>
+
+        <span class="skill">Investment Analysis</span>
+
         <span class="skill">Data Analysis</span>
+
         <span class="skill">Microsoft PowerPoint</span>
+
+        <span class="skill">Client Communication</span>
+
         <span class="skill">Professional Communication</span>
+
+        <span class="skill">Teamwork</span>
+
+        <span class="skill">Research</span>
+
     </div>
+
 </section>
+
 
 <section id="projects">
 
     <h2>Projects</h2>
 
+    <p class="section-intro">
+        Selected projects that demonstrate my experience with financial analysis,
+        research, investing, and business decision-making.
+    </p>
+
+
     <div class="project">
+
+        <span class="project-label">Finance & Investing</span>
+
         <h3>Equity Research & Stock Analysis</h3>
 
         <p>
-            Researched companies across multiple industries by reviewing financial
-            performance, business models, industry trends, and market conditions.
+            Conducted research on companies across multiple industries to better
+            understand their financial performance, competitive position, business
+            models, and future growth opportunities.
         </p>
+
+        <p>
+            My analysis included reviewing company financial statements, revenue and
+            earnings trends, industry conditions, recent company developments, and
+            broader market factors that could affect performance. The project helped
+            strengthen my ability to evaluate companies from both a financial and
+            strategic perspective.
+        </p>
+
     </div>
 
+
     <div class="project">
+
+        <span class="project-label">Portfolio Management</span>
+
         <h3>Portfolio Risk Analysis</h3>
 
         <p>
-            Built Excel-based portfolio and risk models to evaluate investments,
-            asset allocation, and different levels of investment risk.
+            Developed Excel-based portfolio and risk analysis models designed to
+            evaluate different investments, levels of portfolio risk, and potential
+            asset allocation strategies.
         </p>
+
+        <p>
+            The project involved organizing financial data, comparing investment
+            characteristics, and examining how different portfolio decisions could
+            affect overall risk and diversification. This helped me better understand
+            the relationship between investment return, risk tolerance, and portfolio
+            construction.
+        </p>
+
     </div>
 
+
     <div class="project">
+
+        <span class="project-label">Business & Data</span>
+
         <h3>Big Data in Marketing Project</h3>
 
         <p>
-            Researched how companies use customer and market data to understand
-            consumer behavior and improve business decision-making.
+            Researched how companies collect and analyze large amounts of customer
+            and market data to better understand consumer behavior and improve
+            business decision-making.
         </p>
+
+        <p>
+            The project examined how data can help organizations identify customer
+            trends, improve marketing strategies, personalize customer experiences,
+            and make more informed strategic decisions. It also explored the growing
+            importance of data analytics in modern business.
+        </p>
+
     </div>
 
 </section>
 
+
 <footer>
-    <p>© 2026 Sahil Iyer</p>
+
+    <p>© 2026 Sahil Iyer | Personal Portfolio</p>
+
 </footer>
 
+
 </body>
+
 </html>
